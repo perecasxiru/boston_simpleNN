@@ -1,6 +1,8 @@
 import click
 import mlflow
 import tensorflow as tf
+from tensorflow.keras.layers import *
+from tensorflow.keras.models import Model
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
