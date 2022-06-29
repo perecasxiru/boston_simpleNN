@@ -2,8 +2,8 @@ conda_env: conda.yml
 
 entry_points:
   main:
-    command: python main.py --layers {layers} --neurons {neuron} --dropout {dropout}
+    command: python main.py --layers {layers} --neurons {neurons} --dropout {dropout}
     parameters:
       layers: {type: int, default: 3}
       neurons: {type: int, default: 128}
-	 dropout: {type: float, default: 0.1}
+      dropout: {type: float, default: 0.1}
