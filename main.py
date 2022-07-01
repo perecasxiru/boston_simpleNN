@@ -1,5 +1,6 @@
 import click
 import mlflow
+import mlflow.keras
 import tensorflow as tf
 from tensorflow.keras.layers import *
 from tensorflow.keras.models import Model
@@ -48,6 +49,9 @@ def main(layers, neurons, dropout):
     mlflow.log_metric("rmse", rmse_test)
     mlflow.log_metric("mae", mae_test)
     mlflow.log_metric("r2", r2_test)
+    
+    # Log the model
+    mlflow.keras.log_model(model, "model")
 
 if __name__ == "__main__":
     main()
