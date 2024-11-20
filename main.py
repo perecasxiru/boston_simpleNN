@@ -29,7 +29,7 @@ def main(layers, neurons, dropout):
 
     # Model
     # Create the model using the parameters
-    inputs = Input(13)
+    inputs = Input((13,))
     v = inputs
     for _ in range(layers):
         v = Dense(neurons, activation='relu')(v)
