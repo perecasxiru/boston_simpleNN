@@ -1,4 +1,4 @@
-python_env: python_env.yml
+python_env: conda.yml
 
 entry_points:
   main:
