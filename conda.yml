@@ -1,0 +1,12 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python==3.13.0
+  - pip
+  - pip:
+    - mlflow
+    - pandas
+    - numpy
+    - scikit-learn
+    - tensorflow
